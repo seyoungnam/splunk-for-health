@@ -114,7 +114,7 @@ I find the below image useful. Please ignore the connection with the UNO board i
 4. Enable HTTP Event Collector on Splunk Enterprise
    - Follow [the official instructions](https://docs.splunk.com/Documentation/Splunk/9.1.1/Data/UsetheHTTPEventCollector?ref=hk#Enable_HTTP_Event_Collector_on_Splunk_Enterprise)
    - Please take my setting as reference
-   - <img src="./src/hec-global-setting.jpeg" width="600">
+   - <img src="./src/hec-global-setting.png" width="600">
 
 
 ## 4. Send data from Arduino to Splunk
