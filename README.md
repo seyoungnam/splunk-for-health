@@ -24,7 +24,9 @@ This tutorial consists of four parts.
 2. Set up Arduino IDE
 3. Set up Splunk on your laptop
 4. Send data from Arduino to Splunk
+5. Set up the dashboard
 
+<br>
 
 ## 1. Set up Arduino components
 
@@ -32,23 +34,23 @@ This tutorial consists of four parts.
 
 Place the nodeMCU, DHT11 sensor, and power supply module on the breadboard.
 
-<img src="./src/breadboard-setup2.jpeg" width="600">
+<img src="./src/breadboard-setup-2.jpeg" width="600">
 
 ### How to connect
 
-* NodeMCU <-----> DHT11 Temp/Humidity Sensor
+* <b>NodeMCU <-----> DHT11 Temp/Humidity Sensor</b>
   - D7 <-----> S
   - 3V3 <-----> (+) 
   - GND <-----> (-)
 
 <img src="./src/dht11.jpeg" width="300">
 
-* NodeMCU <-----> 5V Relay Module
+* <b>NodeMCU <-----> 5V Relay Module</b>
   - D1 <-----> IN4
   - 3V3 <-----> VCC
   - GND <-----> GND
 
-* NodeMCU <-----> Servo Motor
+* <b>NodeMCU <-----> Servo Motor</b>
   - D4 <-----> Orange line
   - 3V3 <-----> Red line
   - GND <-----> Brown line
@@ -57,7 +59,8 @@ Plese refer to the ESP8266 NodeMCU kit pinout diagram below to find the right pi
 
 <img src="https://i0.wp.com/randomnerdtutorials.com/wp-content/uploads/2019/05/ESP8266-NodeMCU-kit-12-E-pinout-gpio-pin.png?w=817&quality=100&strip=all&ssl=1" width="600" >
 
-* 5V Relay module <--> Fan module <--> Power Supply module
+* <b>5V Relay module <--> Fan module <--> Power Supply module</b>
+
 I find the below image useful. Please ignore the connection with the UNO board in the image. 
 
 <img src="https://arduinogetstarted.com/images/tutorial/arduino-fan-wiring-diagram.jpg" width="600">
@@ -67,7 +70,7 @@ I find the below image useful. Please ignore the connection with the UNO board i
 
 1. Download & install the Arduino IDE([official website](https://www.arduino.cc/en/software))
 2. Open code
-   - Go to **File** > **Open...** > choose "splunk-for-health.ino** (found in this repo) 
+   - Go to **File** > **Open...** > choose "splunk-for-health.ino" (found in this repo) 
 3. Get the ESP board manager extension
    - Go to **Arduino IDE** Menu > **Preferences** > **Settings**
    - Enter `http://arduino.esp8266.com/stable/package_esp8266com_index.json` in **Additional board manager URLs**
